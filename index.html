@@ -9,17 +9,25 @@
 </head>
 <body>
    <header>
-      <label for="botonMenu">Icono</label>
-      <input type="checkbox" id="botonMenu">
-      <nav class="menu">
-         <ul>
-            <li> <a href="#">HOME</a> </li>
-            <li> <a href="#">ABOUT</a> </li>
-            <li> <a href="#">SERVICES</a> </li>
-            <li> <a href="#">WORKS</a> </li>
-            <li> <a href="#">CONTACT</a> </li>
-         </ul>
-      </nav>
+      <div class="contenedor">
+         <div class="divLogo">
+            <img src="img/logoProvisorio.png" alt="">
+         </div>
+         <div class="divNav">
+            <input type="checkbox" id="botonMenu">
+            <label for="botonMenu">MENU <img src="img/iconoMenu.png" alt=""></label>
+
+            <nav class="menu">
+               <ul>
+                  <li> <a href="#">HOME</a> </li>
+                  <li> <a href="#">ABOUT</a> </li>
+                  <li> <a href="#">SERVICES</a> </li>
+                  <li> <a href="#">WORKS</a> </li>
+                  <li> <a href="#">CONTACT</a> </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
    </header>
    <section class="home">
       <h1>
@@ -120,17 +128,23 @@
          Have an idea or a project in mind? Let’s work together. Drop us a line at <a href="mailto:#0">contact@2msoftsolutions.com</a>
       </div>
       <form class="" action="index.html" method="post">
-         <div class="">
+         <div class="campoFormulario">
             <label for="mail">Your mail</label>
-            <input type="mail" name="mail" value="">
+            <br>
+            <input type="mail" name="mail" value="" placeholder="name@mailbox.com">
          </div>
-         <div class="reason">
-            <label for="">The reason for contact</label>
-            <input type="text" name="reason" value="">
+         <div class="campoFormulario">
+            <label for="">The reason for contacting</label>
+            <br>
+            <input type="text" name="reason" value="" placeholder="Text here...">
          </div>
-         <div class="">
+         <div class="campoFormulario">
             <label for="message">Your message</label>
-            <textarea name="message" rows="15" cols="80"></textarea>
+            <br>
+            <textarea name="message" rows="15" cols="80" placeholder="Text here..."></textarea>
+         </div>
+         <div class="botonFormulario">
+            <input type="submit" name="" value="SEND">
          </div>
       </form>
    </section>
