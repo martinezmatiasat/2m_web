@@ -1,3 +1,13 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   margin-top: 3.5rem;
+}
+
 h1 {
    font-family: "Montserrat", sans-serif;
    font-size: 48pt;
@@ -7,23 +17,26 @@ h1 {
    width: 75%;
 }
 
-
 .tituloSeccion {
    font-family: "Montserrat", sans-serif;
-   font-size: 12pt;
+   font-size: 2rem;
    color: #F26522;
    text-rendering: optimizeLegibility;
+   text-align: center;
+   margin-bottom: 2rem;
 }
+
 
 .textoPrincipal {
    font-family: "Merriweather", serif;
    font-weight: 300;
    font-size: 26pt;
-   line-height: 2.4rem;
    padding-top: 2.4rem;
    padding-bottom: 2.4rem;
    margin: auto;
    width: 75%;
+   text-align: center;
+   line-height: 3rem;
 }
 
 .textoExplicativo {
@@ -83,86 +96,212 @@ div {
 /* --- Barra navegacion --- */
 
 header {
+   font-family: 'Montserrat', sans-serif;
+   background: #000;
+   position: fixed;
    width: 100%;
-   background-color: #579347;
+   top: 0;
+   display: flex;
+   justify-content: center;
 }
 
-.contenedor {
-   width: 85%;
-   overflow: hidden;
+nav {
+   width: 90%;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
 }
 
-.divLogo {
-   width: 50%;
-   float: left;
-   overflow: hidden;
+
+nav .logo {
+   display: inline-block;
 }
 
-.divNav {
-   width: 50%;
-   float: left;
-   overflow: hidden;
+nav .logo img {
+   vertical-align: top;
+   padding-top: 0.2rem;
+   padding-bottom: 0.2rem;
 }
 
-#botonMenu {
-   display: block;
-   float: right;
-}
-
-.divNav label {
-   float: right;
-   padding: 10px;
+.logoSlogan {
    color: #fff;
+   text-decoration: none;
+   display: inline-block;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   text-align: center;
+   font-size: 1rem;
 }
 
-header label:hover {
-   cursor: pointer;
-   background: rgba(255, 255, 255, 0.2);
-}
-
-.menu {
-   text-align: right;
-   float: right;
-   position: absolute;
-   margin-top: 2rem;
-   background: #579347;
+header nav .logo label {
    display: none;
 }
 
-.menu ul {
-   margin-top: 0;
-   list-style: none;
-   padding: 0;
+header nav .logo label i{
+   color: #fff;
+   text-decoration: none;
+   font-size: 1rem;
+}
+
+.enlaces {
    display: flex;
    justify-content: flex-end;
-   flex-direction: row;
 }
 
-.menu li {
-   border-top: 1px solid #333333;
-}
-
-.menu li a {
-   display: block;
-   padding: 15px 20px;
-   color: #999999;
+nav .enlaces a {
+   color: #fff;
    text-decoration: none;
+   display: inline-block;
+   padding: 1rem;
+   text-align: center;
+   font-size: 1rem;
 }
 
-.menu li:hover {
-   background: rgba(255, 255, 255, 0.1);
+nav .enlaces a:hover {
+   background: #666;
 }
 
-#botonMenu:checked ~ .menu {
-   display: block;
-   float: right;
+.botonMenu {
+   display: none;
 }
 
+/* Efectos del menu */
+
+.headroom {
+   transition: transform .3s ease;
+}
+
+.headroom--pinned {
+   transform: translateY(0%);
+}
+
+.headroom--unpinned {
+   transform: translateY(-100%);
+}
+
+
+/* Mediaqueries */
+
+@media screen and (max-width: 900px) {
+   header nav {
+      flex-direction: column;
+   }
+
+   header nav .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1rem;
+   }
+
+   header nav .logo label {
+      display: inline-block;
+   }
+
+   .enlaces {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background: #000;
+      margin-top: 5rem;
+      margin-left: -200%;
+   }
+
+   #botonMenu:checked ~ .enlaces {
+      margin-left: 0;
+   }
+}
+
+/* --------- Home section ----------*/
+
+.home {
+   background-image: url("../img/fondo_home.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/* --------- About section ----------*/
+
+
+/* --------- Skills section --------- */
+
+.skills {
+   background: #000;
+}
+
+.skill-bars {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   list-style: none;
+}
+
+/* --------- Works section --------- */
+
+.divPortfolio {
+   width: 85%;
+   background: #fff;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.divTrabajoReciente {
+   width: 240px;
+   height: 300px;
+   background: #666;
+   margin: 1rem;
+}
+
+.divTrabajoReciente img{
+   width: 240px;
+   height: 240px;
+}
+
+.nombreWeb{
+   margin: auto;
+   width: 100%;
+   padding: 1rem;
+   background: #666;
+   text-align: center;
+   font-family: "Montserrat", sans-serif;
+   font-size: 0.85rem;
+   color: #fff;
+   cursor: pointer;
+}
+
+.nombreWeb a {
+   font-family: "Montserrat", sans-serif;
+   text-decoration: none;
+   color: #fff;
+}
 
 /* --------- Contact section --------- */
 
 form {
    margin-top: 2.4rem;
+}
+.textocontacto{
+   font-family: "Merriweather", serif;
+   font-weight: 100;
+   font-size: 20pt;
+   padding-top: 2.4rem;
+   padding-bottom: 2.4rem;
+   margin: auto;
+   width: 75%;
+   text-align: center;
+}
+.textocontacto a{
+   text-decoration: none;
+   color: #F26522;
 }
 
 .campoFormulario {
@@ -177,7 +316,7 @@ form {
    color: #999;
 }
 
-.campoFormulario input{
+.campoFormulario input {
       margin-top: 0.65rem;
       width: 95%;
       padding: 1rem;

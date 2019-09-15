@@ -2,132 +2,146 @@
 <html lang="en" dir="ltr">
 <head>
    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <link rel="stylesheet" href="css/master.css">
+   <link rel="stylesheet" href="css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Merriweather:300&display=swap" rel="stylesheet">
    <title>2M SOFT SOLUTIONS</title>
 </head>
 <body>
    <header>
-      <div class="contenedor">
-         <div class="divLogo">
-            <img src="img/logoProvisorio.png" alt="">
+      <nav>
+         <input type="checkbox" class="botonMenu" id="botonMenu">
+         <div class="logo">
+            <a href="#"><img src="img/logo_2m_chico_slogan.png" alt=""></a>
+            <label for="botonMenu"><i class="icono fa fa-bars" aria-hidden="true"></i></label>
          </div>
-         <div class="divNav">
-            <input type="checkbox" id="botonMenu">
-            <label for="botonMenu">MENU <img src="img/iconoMenu.png" alt=""></label>
-
-            <nav class="menu">
-               <ul>
-                  <li> <a href="#">HOME</a> </li>
-                  <li> <a href="#">ABOUT</a> </li>
-                  <li> <a href="#">SERVICES</a> </li>
-                  <li> <a href="#">WORKS</a> </li>
-                  <li> <a href="#">CONTACT</a> </li>
-               </ul>
-            </nav>
+         <div class="enlaces" id="enlaces">
+            <a href="#ho">HOME</a>
+            <a href="#ab">ABOUT</a>
+            <a href="#sk">SKILLS</a>
+            <a href="#wo">WORKS</a>
+            <a href="#co">CONTACT</a>
          </div>
-      </div>
+      </nav>
    </header>
-   <section class="home">
+   <section class="home" id='ho'>
       <h1>
          We provide solutions <br>
          to turn your ideas<br>
          into digital reality
       </h1>
-      <div class="button">
-         <button type="button" name="button"><a href="#about">More about us ></a></button>
-      </div>
+
    </section>
 
 
-   <section class="about">
+   <section class="about" id='ab'>
       <div class="tituloSeccion">
-         01. - - - WHO ARE WE
+         01. WHAT WE DO
       </div>
       <div class="textoPrincipal">
-         We are... orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         <p>We design and develop web apps using HTML for structure, CSS for design and Javascript for interactions and / or client-side validations. In the design and development of FrontEnd we take good practices to make responsive sites. The Backend and the REST API are developed in PHP / Python, with Laravel / Django as a support framework using good MVC practices. We design and use UML for the assembly and organization of the relational database with which we then interact through MySQL.
+</p>
+      </div>
+
+
+   </section>
+
+
+   <section class="skills" id='sk'>
+      <div class="tituloSeccion">
+         02. SKILLS
       </div>
       <div class="">
-         <h3>Our Skills</h3>
-         <ul class="skill-bars">
-            <li>
-               <div class="progress percent85"><span>85%</span></div>
-               <strong>HTML5</strong>
-            </li>
-            <li>
-               <div class="progress percent70"><span>70%</span></div>
-               <strong>CSS3</strong>
-            </li>
-            <li>
-               <div class="progress percent95"><span>95%</span></div>
-               <strong>PHP</strong>
-            </li>
-            <li>
-               <div class="progress percent85"><span>85%</span></div>
-               <strong>MySQL</strong>
-            </li>
-            <li>
-               <div class="progress percent75"><span>75%</span></div>
-               <strong>JavaScript</strong>
-            </li>
-         </ul>
+      <ul class="skill-bars">
+         <li>
+            <img src="img/logo_html5.png" alt="">
+
+         </li>
+         <li>
+            <img src="img/logo_css3.png" alt="">
+
+         </li>
+         <li>
+            <img src="img/logo_js.png" alt="">
+
+         </li>
+         <li>
+            <img src="img/logo_php.png" alt="">
+
+         </li>
+         <li>
+            <img src="img/logo_mysql.png" alt="">
+
+         </li>
+         <li>
+            <img src="img/logo_python.png" alt="">
+
+         </li>
+         <li>
+            <img src="img/logo_c++.png" alt="">
+
+         </li>
+         <li>
+            <img src="img/logo_laravel.png" alt="">
+
+         </li>
+      </ul>
+   </div>
+
+   </section>
+
+
+   <section class="works" id='wo'>
+      <div class="tituloSeccion">
+         03. RECENT WORK
+      </div>
+      <div class="divPortfolio">
+         <div class="divTrabajoReciente">
+            <a href="#" class="linkWebImg"><img src="img/logo_zrgolf.png" alt=""></a>
+
+            <div class="nombreWeb">
+               <a href="#" class="">ZR Golf</a>
+            </div>
+         </div>
+         <div class="divTrabajoReciente">
+            <a href="#" class="linkWebImg"><img src="img/logo_friends.png" alt=""></a>
+            <div class="nombreWeb">
+               <a href="#" class="">Grupo Friends</a>
+            </div>
+         </div>
+         <div class="divTrabajoReciente">
+            <a href="#" class="linkWebImg"><img src="img/logo_telehinchable.png" alt=""></a>
+            <div class="nombreWeb">
+               <a href="#" class="">TeleHinchable</a>
+            </div>
+         </div>
+         <div class="divTrabajoReciente">
+            <a href="#" class="linkWebImg"><img src="img/logo_birgin_tancredi.png" alt=""></a>
+            <div class="nombreWeb">
+               <a href="#" class="">Birgin Tancgredi</a>
+            </div>
+         </div>
+         <!--- <div class="divTrabajoReciente">
+            <a href="#" class="linkWebImg"><img src="img/sin_imagen.png" alt=""></a>
+            <div class="nombreWeb">
+               <a href="#" class="">Nombre de web</a>
+            </div>
+         </div>-->
       </div>
    </section>
 
 
-   <section class="services">
+   <section class="contact" id='co'>
       <div class="tituloSeccion">
-         02. - WHAT WE DO
+         04. CONTACT US
       </div>
-      <div class="textoPrincipal">
-         We are... orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <div class="textocontacto">
+         <p>Have an idea or a project in mind? Let’s work together. Drop us a line at <a href="mailto:#0">marcelo@2msoftsolutions.com</a></p>
+         <p>Phone: (+54) 9 11 6701 4028 / (+54) 9 11 2263 5097</p>
       </div>
-
-      <div class="contenedorColumnas">
-         <div class="columna">
-            <h4 class="titulo">BRAND IDENTITY</h4>
-            <p class="textoExplicativo">
-               Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-               a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-               asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-            </p>
-         </div>
-         <div class="columna">
-            <h4 class="titulo">ILLUSTRATION</h4>
-            <p class="textoExplicativo">
-               Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-               a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-               asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-            </p>
-         </div>
-         <div class="columna">
-            <h4 class="titulo">WEB DESIGN</h4>
-            <p class="textoExplicativo">
-               Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-               a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-               asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-            </p>
-         </div>
-      </div>
-   </section>
-
-
-   <section class="works">
-      <div class="tituloSeccion">
-         03. - RECENT WORKS
-      </div>
-   </section>
-
-
-   <section class="contact">
-      <div class="tituloSeccion">
-         04. - CONTACT US
-      </div>
-      <div class="textoPrincipal">
-         Have an idea or a project in mind? Let’s work together. Drop us a line at <a href="mailto:#0">contact@2msoftsolutions.com</a>
-      </div>
-      <form class="" action="index.html" method="post">
+      <form class="" action="mail.php" method="post">
          <div class="campoFormulario">
             <label for="mail">Your mail</label>
             <br>
