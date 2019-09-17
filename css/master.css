@@ -26,7 +26,6 @@ h1 {
    margin-bottom: 2rem;
 }
 
-
 .textoPrincipal {
    font-family: "Merriweather", serif;
    font-weight: 300;
@@ -81,16 +80,6 @@ section {
 div {
    margin: auto;
    width: 85%;
-}
-
-.contenedorColumnas {
-   overflow: hidden;
-}
-
-.columna {
-   width: 30%;
-   float: left;
-   margin: 1.66%;
 }
 
 /* --- Barra navegacion --- */
@@ -225,6 +214,42 @@ nav .enlaces a:hover {
    background-repeat: no-repeat;
    background-position: center;
 }
+
+.switchIdioma {
+   width: 90%;
+   font-family: 'Montserrat', sans-serif;
+   margin-top: -3rem;
+   overflow: hidden;
+
+}
+
+.idiomaActual {
+   float: right;
+   width: 4rem;
+   padding: 1rem;
+   background: #F26522;
+   text-align: center;
+}
+
+.idiomaAlternativo {
+   float: right;
+   width: 4rem;
+   font-size: 1rem;
+   padding: 1rem;
+   background: #000;
+   text-align: center;
+}
+
+.idiomaAlternativo a{
+   font-size: 1rem;
+   text-decoration: none;
+   color: #fff;
+}
+
+.idiomaAlternativo:hover {
+   background: #666
+}
+
 
 /* --------- About section ----------*/
 
